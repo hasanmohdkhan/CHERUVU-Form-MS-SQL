@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="1">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+      android:layout_margin="10dp"
+      android:id="@+id/layout1"  >
+
+        <TextView
+            android:id="@+id/User_name"
+            android:layout_width="128dp"
+            android:layout_height="50dp"
+            android:text="User: "
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+
+
+        <EditText
+            android:id="@+id/User_name_Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter User Name"
+            />
+
+    </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/layout1"
+           android:orientation="horizontal"
+           android:layout_margin="10dp"
+           >
+
+           <TextView
+               android:id="@+id/textView4"
+               android:layout_width="127dp"
+               android:layout_height="60dp"
+               android:text="Password: "
+               android:textSize="20dp"
+               android:textColor="@color/colorPrimaryDark"/>
+
+           <EditText
+               android:id="@+id/Edit_Password"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:ems="10"
+               android:inputType="textPassword" />
+
+
+
+
+
+
+
+       </LinearLayout>
+    <TextView
+        android:id="@+id/TextWraning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+
+        android:textColor="#ff0000"
+        android:gravity="center"
+
+        style=""/>
+
+
+    <Button
+        android:id="@+id/button_Login"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:layout_marginLeft="150px"
+        android:layout_marginRight="150px"/>
+
+
+</LinearLayout>
